@@ -1,18 +1,20 @@
 # Hardware Raspberry Pi Configuration
 
-One Paragraph of project description goes here
+The main purpose of this proyect is to generate a crowd size scanner Wifi based.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+The principal reason for using an extra piece of hardware is to substitude the use of the Cisco CMX, that can be access within the campus. If the access to the Cisco CMX is granted, then this device could be use in remote places of the campus where there is no AP near the area.
 
-### Prerequisites
+### Installing
 
-What things you need to install the software and how to install them
+In order to get running the Raspberry Pi Crowd Scanner, the dependecies needed are: 
 
+* FireBase: To update the Real-time DataBase. In order to make the connection DB with Python we used a wraper to achieved full functionality.
 ```
-Give examples
+$ sudo pip install pyrebase
 ```
+<<<<<<< HEAD
 
 ### Installing
 
@@ -25,32 +27,29 @@ In order to get running the Raspberry Pi Crowd Scanner, the dependecies needed a
 * TShark: To scann the devices near the area.
 ```
 sudo apt-get install tshark
+=======
+* TShark: To scann the devices near the area.
 ```
-
-End with an example of getting some data out of the system or using it for a little demo
+$ sudo apt-get install tshark
+```
+* Request: To make any kind of http petitions.
+```
+$ sudo apt-get install request
+>>>>>>> FireBasePy
+```
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
+* [Python](https://www.python.org/) - The main language.
+* [Bash Script](https://maven.apache.org/) - For running the commands in the Raspberry Pi
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+* **Juan Pablo** 
+* **Jorge Diego**
 
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+* Inspired by [LiveOverflow](https://liveoverflow.com/)
 
