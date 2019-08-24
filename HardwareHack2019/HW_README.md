@@ -36,5 +36,5 @@ $ sudo apt-get install request
 
 ## Acknowledgments
 
-* Inspired by [LiveOverflow] (https://liveoverflow.com/)
+* Inspired by [LiveOverflow](https://liveoverflow.com/)
 
