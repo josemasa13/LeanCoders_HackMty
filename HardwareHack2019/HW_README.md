@@ -14,20 +14,6 @@ In order to get running the Raspberry Pi Crowd Scanner, the dependecies needed a
 ```
 $ sudo pip install pyrebase
 ```
-<<<<<<< HEAD
-
-### Installing
-
-In order to get running the Raspberry Pi Crowd Scanner, the dependecies needed are: 
-
-* FireBase: To update the Real-time DataBase.
-```
- sudo pip install python-firebase
-```
-* TShark: To scann the devices near the area.
-```
-sudo apt-get install tshark
-=======
 * TShark: To scann the devices near the area.
 ```
 $ sudo apt-get install tshark
@@ -35,7 +21,6 @@ $ sudo apt-get install tshark
 * Request: To make any kind of http petitions.
 ```
 $ sudo apt-get install request
->>>>>>> FireBasePy
 ```
 
 ## Built With
