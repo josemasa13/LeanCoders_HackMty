@@ -16,18 +16,15 @@ Give examples
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
+In order to get running the Raspberry Pi Crowd Scanner, the dependecies needed are: 
 
-Say what the step will be
-
+* FireBase: To update the Real-time DataBase.
 ```
-Give the example
+ sudo pip install python-firebase
 ```
-
-And repeat
-
+* TShark: To scann the devices near the area.
 ```
-until finished
+sudo apt-get install tshark
 ```
 
 End with an example of getting some data out of the system or using it for a little demo
