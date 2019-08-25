@@ -36,7 +36,7 @@ function getDataWest(){
 
 function getDataEast(){
   places = database.ref('Places/Centro_Estudiantil_East').once('value').then(function(snapshot) {
-      var spots = snapshot.val();
+    var spots = snapshot.val();
       for (key in spots){
           for(key2 in spots[key]){
               var average = spots[key][key2].reduce((a,b) => a+b, 0) / 3;
@@ -149,8 +149,10 @@ function updateChartWest(){
       }
     }
   });
-  labels_west = []
-  data_west = []
+  var westNum = document.getElementById("west");
+  westNum.innerHTML = Math.floor(data_west[data_west.length - 1]);
+  labels_west = [];
+  data_west = [];
 }
 
 function updateChartEast(){
@@ -244,8 +246,10 @@ function updateChartEast(){
       }
     }
   });
-  labels_east = []
-  data_east = []
+  var eastNum = document.getElementById("east");
+  eastNum.innerHTML = Math.floor(data_east[data_east.length - 1]);
+  labels_east = [];
+  data_east = [];
 }
 
 
