@@ -46,7 +46,7 @@
                 
                 
                 var previousVal = "";
-                places = database.ref('Places/Centro_Estudiantil').once('value').then(function(snapshot) {
+                places = database.ref('Places/Centro_Estudiantil_East').once('value').then(function(snapshot) {
                     var spots = snapshot.val();
                     for (key in spots){
                         for(key2 in spots[key]){
