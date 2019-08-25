@@ -1,9 +1,8 @@
 import subprocess
 import time
 from datetime import datetime
-#results = open("results.txt", "a")
+
 subprocess.run(['airmon-ng', 'start', 'wlan0'])
-file = open('/home/pi/Desktop/HERE.txt', 'a')
 times = [0,0,0]
 
 while 1:
@@ -13,14 +12,10 @@ while 1:
         splitblah = stdout.split("\n")
         dictofString=dict.fromkeys(splitblah)
         del dictofString[""]
-        now = datetime.now()
-        timestamp = datetime.timestamp(now)
-        
         
         times[x] = len(dictofString)
         time.sleep(1)
     
-    #timestamp = datetime.timestamp(now)
-    file.write("********\n")
-    #print("timestamp: ", timestamp, "\n", "times: ",times, "\n\n")
-file.close()
+    now = datetime.now()
+    timestamp = datetime.timestamp(now)
+    print("timestamp: ", timestamp, "\n", "times: ",times, "\n\n")
