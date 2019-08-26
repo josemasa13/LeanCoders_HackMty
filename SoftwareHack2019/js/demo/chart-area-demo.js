@@ -1,13 +1,13 @@
 // Code to connect to the firebase database
 //TODO: Replace the following with your app's Firebase project configuration
 var firebaseConfig = {
-    apiKey: "AIzaSyCGZwf8Trjn70HhlqTWcvKy8vcxD9ZSrms",
+    apiKey: "xxxxxx",
     authDomain: "geo-lean-spot.firebaseapp.com",
     databaseURL: "https://geo-lean-spot.firebaseio.com",
     projectId: "geo-lean-spot",
     storageBucket: "geo-lean-spot.appspot.com",
-    messagingSenderId: "376675735017",
-    appId: "1:376675735017:web:5a312db977430ace"
+    messagingSenderId: "xxxxx",
+    appId: "xxxxxx"
 };
 
 // Initialize Firebase
