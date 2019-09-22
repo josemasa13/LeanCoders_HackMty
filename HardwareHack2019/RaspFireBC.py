@@ -10,13 +10,13 @@ times = [0,0,0]
 
 # Firebase Configurations with Pyrebase
 configuration_sets = {
-    'apiKey': "AIzaSyCGZwf8Trjn70HhlqTWcvKy8vcxD9ZSrms",
+    'apiKey': "##################",
     'authDomain': "geo-lean-spot.firebaseapp.com",
     'databaseURL': "https://geo-lean-spot.firebaseio.com",
-    'projectId': "geo-lean-spot",
+    'projectId': "##################",,
     'storageBucket': "geo-lean-spot.appspot.com",
-    'messagingSenderId':"376675735017",
-    'appId': "1:376675735017:web:5a312db977430ace"
+    'messagingSenderId':"##################",
+    'appId': "##################",
 }
 
 def monProcess():
